@@ -1,0 +1,28 @@
+{
+  "ProjectName": "AdmiYapa",
+  "ProjectGuid": "1900bd14-2951-489e-a107-143f7a393b15",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.AdmiYapa",
+  "DisplayName": "AdmiYapa",
+  "Author": "",
+  "Description": "AdmiYapa",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "2.5.0",
+  "Framework": "NativeScript"
+}
