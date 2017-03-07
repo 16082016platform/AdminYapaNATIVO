@@ -1,0 +1,52 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded" id="usuariosScreen" cssClass="screen">
+    <ActionBar title="Title">
+        <NavigationButton text="Back" android.systemIcon="ic_menu_back"
+            tap="onBack" visibility="collapsed">
+        </NavigationButton>
+
+        <!--<Label cssClass="list-icon km-icon" text="{{ icon \ue0e7}}" />-->
+
+        <Button text="Refresh" tap="getUsuarios" visibility="visible" />
+
+        <ActionBar.titleView>
+            <GridLayout columns="auto, 5, *">
+            <Image src="~/images/yapa72.png" width="36" height="36" />
+            <Label col="2" text="{{ pageTitle }}" minWidth="100" />
+            </GridLayout>
+        </ActionBar.titleView>
+    </ActionBar>
+
+
+    <StackLayout>
+
+        <GridLayout rows="auto, *">
+
+            <ListView row="1" items="{{ listItems }}" itemTap="onListViewItemTap">
+                <ListView.itemTemplate>
+                    <StackLayout>
+                        <GridLayout columns="100, *" cssClass="padded-label">
+
+
+                            <Image col="0" width="80" height="80" src="{{ image }}" margin="10" />
+
+
+                            <StackLayout col="1" cssClass="padded-label-stack" verticalAlignment="middle">
+                                <Label text="{{ header }}" cssClass="title-label" textWrap="true" />
+                                <Label text="{{ description }}" textWrap="true" />
+                            </StackLayout>
+
+                        </GridLayout>
+                        <!-- additional view content -->
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+            <ActivityIndicator row="1" busy="{{ isLoading }}" />
+        </GridLayout>
+        <!-- additional view content -->
+
+        <!-- START_CUSTOM_CODE_usuarios -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_usuarios -->
+    </StackLayout>
+</Page>

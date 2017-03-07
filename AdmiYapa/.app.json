@@ -5,12 +5,57 @@
       "type": "NativeScript:view",
       "name": "homeView",
       "components": [],
-      "title": "Home View",
+      "title": "HomeView",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "history"
+    },
+    {
+      "type": "NativeScript:view",
+      "name": "usuarios",
+      "components": [
+        {
+          "type": "NativeScript:editableList",
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [],
+          "name": "usuariosModel",
+          "dataProvider": "backendServices",
+          "collection": "Users",
+          "headerField": "DisplayName",
+          "imageField": "DisplayName",
+          "subHeaderField": "Email",
+          "isMapView": false,
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "iconField": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail",
+          "detailSubHeaderField": "DisplayName",
+          "detailDescriptionField": "Email"
+        }
+      ],
+      "title": "Usuarios",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "NativeScript:dataProvider",
+      "name": "backendServices",
+      "source": "everlive",
+      "everliveKey": "d0e04yptbmwfq36k",
+      "offlineStorage": true,
+      "title": "Backend Services"
+    }
+  ],
   "name": "nativeScriptApp",
   "navigation": "listmenu",
   "transition": "none",

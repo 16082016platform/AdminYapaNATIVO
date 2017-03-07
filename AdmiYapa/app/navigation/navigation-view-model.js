@@ -4,9 +4,13 @@ var menuItems,
     navigationViewModel = new observable.Observable();
 
 menuItems = [{
-    "title": "Home View",
+    "title": "HomeView",
     "moduleName": "components/homeView/homeView",
-    "icon": "\ue0dd"
+    "icon": "\ue0e7"
+}, {
+    "title": "Usuarios",
+    "moduleName": "components/usuarios/usuarios",
+    "icon": "\ue0eb"
 }];
 
 navigationViewModel.set('menuItems', menuItems);
